@@ -1,0 +1,214 @@
+웹 창에서 F12 누르고 Console에서 하는건 내 컴퓨터에서만 됨, 새로고침(F5)하면 원상복구됨
+
+
+//  ;는 줄이 끝났다는 뜻 (불필요하지만 써주자)
+
+//####################변수#####################
+// class 등 이미 js 에서 쓰고 있는 단어는 변수명을 만들 수 없다.    (이런걸 예약어라고 한다)
+
+변수 중복 방지
+let 최초로 사용하는 변수에 사용하면 이미 사용하던데 있는지 알 수 있음
+그리고
+let a123 = "a";
+//위에 let 썼는데 내용물 바꿀 때 의도적으로 let을 생략하기도 함
+a123 = "A+";
+
+
+
+const   절대로 바뀌지 않는 상수 이용할 때 사용(다른 파일 에서 가져올 때 등)
+
+
+
+주석처리 방법
+html : <!--내용-->
+Js : 한줄은 //로 시작,  한줄 이상은 /*내용*/
+css : /*내용*/
+
+
+경우창을 띄우는 함수    alert()
+
+로그를 띄우는 함수  Console.log()   <- 이거 출력 아니었어???
+
+
+
+
+
+이벤트가 뭐지?
+서브밋 이벤트를 발생시키는 뭔데?
+로그인  화면 만들기 했는데
+
+관례적으로 css에 적어서 하지 자바스크립트에 직접 적지 않는다고
+
+변수명 바꾸는 단축키
+vscode에서 작업 시 단축키 Ctrl + Shift + L 로 변수명 여러 개를 동시에 변경
+
+
+토글은 반대로 바꾸는 거
+
+
+
++ 대신  `고정으로 나옴 ${변수??}`
+ 예시
+ `Hello ${username}`
+ clock.innerText = `${hours}:${minutes}:${seconds}`;
+
+
+
+시계 만들기
+
+const hours = String(date.getHours()).padStart(2, "0"); 
+    //문자열로 바꿈, 문자열은 pad스타트 쓸 수 있음,
+    //(2, "0") 문자 길이가 2보다 작으면 앞에 0을 붙여라
+예시
+인풋    "k".padStart(5, "x")
+출력    'xxxxk'
+"l".padEnd(5,"Hi")
+'lHiHi'
+
+
+
+html 바꾸기  document.getElementById('hello').innerHTML = '안녕';
+
+ document.getElementById('X문서아이디X').x바꾸려는 것x = 'x바꿀 것x';
+웹문서  .   문서id로 요소 가져오기      .              =            ;
+
+내부 요소 바꾸기 : innerHTML
+색 바꾸기 : .style.color = 'red'   <- 색 영명으로 적어야 함
+문자 크기 : .style.fontSize = "30px";
+여백 바꾸기 : 
+사이즈 바꾸기 : <- 구글링해서 찾기
+
+
+
+
+<body>
+    <h2 id="hello">안녕하세요</h2> h2는 글자 크기
+
+
+
+
+= 등호는 대입 오른쪽걸 왼쪽에 넣어주세요
+
+"문자"  '문자'
+
+
+document.getElementById('X문서아이디X').    <-셀렉터라고 부름
+
+
+
+//자료형
+
+
+const name = "Mike";
+ //문자형 String "" ''  `고정 ${변수}` 물결 아래에 있는 것
+const age = 30; //숫자형
+
+
+const myName = `My name is ${name}`; //달러랑 중괄호 사이에 변수
+
+console.log(myName);
+    출력: My name is Mike
+
+const message1 = `나는 ${30+1}살 입니다.`;
+console.log(message1);
+    출력 : 나는 31살 입니다.
+
+const name = 'Mike';
+const a = "나는 ";
+const b = "입니다.";
+console.log(a + name + b);     //나는 Mike입니다.
+
+
+const age = 30 //number
+console.log(a + age + "살 " +b) //나는 30살 입니다.
+
+
+
+
+// 숫자형
+const age = 30; //숫자형 Number
+const Pi = 3.14;
+
+console.log(1 + 2); // 더하기
+console.log(10 - 3); //빼기
+console.log(3*2); //곱하기
+console.log(6 / 3); //나누기 소숫점까지 나옴
+console.log(7 % 2); //나머지 : 1의 자리까지 나누고 나머지
+console.log(7 / 2 ); //소숫점까지 나옴
+console.log(5 / 0); //Infinity 무한대 출력
+출력
+3
+7
+6
+2
+1
+3.5
+Infinity
+
+const name = 'Mike';
+const y = name/2; //문자열을 숫자로 나누기
+
+console.log(y)  //출력 : NaN
+//NaN = not a number
+
+
+//Boolean
+
+const a = true; //참
+const b = false; //거짓
+
+const name = "Mike";
+const age = 30; 
+
+console.log(name == "Mike");
+console.log(age > 40);
+
+// true
+// false
+
+
+
+
+//null 과 undefined 
+
+//변수 선언만 하고 아무것도 할당 하지 않기
+
+let age;
+console.log(age)    //자동으로 undefined 출력
+
+
+let user = null; //변수에 ""없이 nill 주기
+console.log(user)  //null 출력
+
+
+//typeof 연산자 - 변수의 자료형 출력
+
+const name = 'Mike';
+
+console.log(typeof 3);  //  number  숫자형
+console.log(typeof name);  //  string   문자형
+console.log(typeof true);  //  boolean  볼룬...진실/거짓
+console.log(typeof "xxx");  //  string
+console.log(typeof null);  //  object   객체형(null != 객체)    
+console.log(typeof undefined);  //  undefined   정의되지않음
+
+##############
+##  JSON #####
+##############
+제이슨 많이 사용함. 뭔지 알아내
+제이슨은 배열 안에 오브젝트 많이 들어있는 것
+
+JSON.Stringify()
+JSON.parse()
+
+
+
+
+/*  alert()   알려줌 - 매세지 뜨고 사용자가 확인을 누를 때 까지 사라지지 않음
+prompt  입력 받음
+confirm  확인 받음 */
+
+
+//prompt()
+const name = prompt("이름을 입력하세요.");  //입력창 뜸
+alert("환영합니다, " + name + "님");

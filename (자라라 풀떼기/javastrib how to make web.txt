@@ -1,0 +1,29 @@
+프리소스 받은걸로 조작한거는 내 컴퓨터만 
+
+디플로이: 어디서든 접속 가능하도록 도메인받고 배포하는 것
+
+
+다른사람 접속 가능하게
+1. 내 컴퓨터를 서버로
+2. 외부서버에 html 올려놓기 
+
+
+
+1. 홈페이지만들어주는 어디냐
+수정 후 evonyee폴더 통채로 올리기
+사이트 세팅에서  change sit nam으로 사이트 이름정정가능 (영명)
+
+2. 도메인 파는데 가입
+
+
+유료
+aws
+Microsoft
+Google Cloud
+
+무료
+netlify
+vercel
+Pages
+HEROKU
+cloudtype

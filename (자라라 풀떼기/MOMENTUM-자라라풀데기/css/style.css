@@ -1,0 +1,146 @@
+*{
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+  padding : 0;
+  font-family: "Montserrat", "Noto Sans KR", "Noto Sans JP", "Noto Sans SC", sans-serif;
+}
+body, html {
+  width: 100vw;
+  height: 100vh;
+  position:relative;
+}
+.hidden {
+  display: none;
+}
+img {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.8;
+}
+#clock {
+  position: absolute;
+  left: 50vw;
+  top: 8vh;
+  transform: translate(-50%);
+  color: rgb(233, 244, 19);
+  /* 색 지정하는거 기억해라 */
+  font-family: "Roboto", "Noto Sans KR", "Noto Sans JP", "Noto Sans SC", sans-serif;
+  font-size: 70px;
+}
+#greeting {
+  position: absolute;
+  left: 50vw;
+  margin-top: 24vh;
+  transform: translate(-50%);
+  color: #fff;
+  font-size: 45px;
+  text-shadow: 1px 1px rgb(0 0 0 / 30%);
+}
+#login-form {
+  position : absolute;
+  left: 50vw;
+  top: 25vh;
+  transform: translate(-50%);
+  color: #fff;
+  font-size: 42px;
+  text-shadow: 1px 1px rgb(0 0 0 / 30%);
+}
+#login-form input {
+  position: relative;
+  left: 38%;
+  transform: translate(-37.9%);
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  width: 250px;
+  font-size: 20px;
+  color: #000;
+  background-color: #ffffffa8;
+}
+
+#todo-form input {
+  position: absolute;
+  left: 50%;
+  top: 35vh;
+  transform: translate(-50%);
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  padding: 10px 0;
+  border-radius: 8px;
+  width: 400px;
+  background-color: #ffffffa8;
+}
+.scroll{
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  top: 45vh;
+  width:400px;
+  height:300px;
+  overflow: hidden;
+}
+.scrollBlind{
+  position: absolute;
+  width:400px;
+  height:100%;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+} 
+
+::-webkit-scrollbar { 
+  display:none; 
+}
+
+#todo-list {
+  width: 400px;
+  top: 5%;
+  left: 1%;
+  position: absolute;
+  color: #fff;
+  font-size: 24px;
+  text-shadow: 1px 1px rgb(0 0 0 / 10%);
+  text-align: center;
+}
+#todo-list li {
+  font-size: 20px;
+  background-color: #00000054;
+  padding: 4px 0;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+ul button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin-left: 10px;
+}
+#weather {
+  position: absolute;
+  transform: translate(-50%);
+  right: -5vw;
+  margin-top: 2vh;
+  font-size: 18px; 
+  border: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 6px;
+  background-color: #ffffffa8;
+  color : rgb(94, 86, 86);
+}
+#quote {
+  position: absolute;
+  transform: translate(-50%);
+  left: 50vw;
+  top: 88vh;
+  font-size: 18px; 
+  border: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 6px;
+  background-color: #ffffffa8;
+  color : rgb(94, 86, 86);
+}

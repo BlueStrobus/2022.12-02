@@ -1,0 +1,146 @@
+바닐라 js- 자바로만 웹 만들기
+
+*모멘텀 구글스토어에서 깔고 수정해보기
+
+처음은 소문자, 이어지는 다음단어 첫글자는 대문자(캐멀식)
+초기에 웹은 움직이지 못함
+자바스트립- 넷 스케이프? 브라우저-> 동적인 웹페이지 만듦 -> 자바스트립트 탄생
+
+
+자바는 설치필요없음 브라우저에 이미 깔려있음 (파이썬은 설치했는데)
+
+#자바스크립트로 할 수 있는 것
+three.js - 3d 구현 라이브러리
+React Native - 앱 만들기
+Electron - 앱 만들기
+백엔드 - 웹계발 시 안보이는 쪽, 동작만듦
+sockrt.io - 소켓할때..?
+ml5.js - 머신러닝
+
+##############
+# 콘솔
+#############
+f12 나 컨츠롤 쉬프트 아이
+콘솔에서 입력
+
+alert("요소")   -엔터누르면 프린트처럼 뜸
+
+숫자계산, 문장 그냥 쓰기 가능
+
+
+css랑 js를 html이 연결해줌
+
+숫자열 문자열
+
+#########################
+변수-콘솔에 출력부터
+const
+let 변할듯
+val
+관례일뿐, 케멀식으로 사용
+
+#######################
+boolean(트루,펄스)
+null
+
+#############
+배열[]
+
+
+$\##############
+객체 {}
+또 다른 
+const player = {
+    name: "지구",
+    points: 1111'
+    handsome: true
+}
+
+
+
+console.log(player);
+console.log(player.name);
+
+##########
+함수- 
+반복하는것
+function 이름() {
+	console.log{반복할 것};
+}
+이름();
+  .
+  .원하는 만큼 ctrl +c,v
+  .
+
+계산기
+function pluse(a,b) {
+    console.log(a+b);
+}
+
+function divide(a,b) {
+    console.log(a/b);
+}
+
+
+pluse(5,6);
+divide(6,2);
+#########
+//주석처리
+
+
+########반환
+계산기
+const calculator = {
+    plus: function(a,b) {return a+b;
+    },
+    minus: function(a,b) {return a-b;
+    },
+    TimeRanges: function(a,b) {return a*b;
+    },
+    divide: function(a,b) {return a/b;
+    },
+    power: function(a,b) {return a**b;
+    }
+
+
+};
+
+
+
+const plusResult = calculator.plus(3,2);   //어딘가 잘못됬는데
+
+##조건문
+진실거짓
+if	else if	elce
+
+
+const age = print("Hi");
+
+console.log(age);
+
+
+console.log(parseInt(age));
+
+if(isNaN(age)){
+    // 조건에 맞을 때 실행
+    console.log("Thqnks")
+} else if (age >= 20 && age <=50) {
+    console.log("You can drinke.")
+} else if (age >= 50 && age <=80) {
+   console.log("You can do whatever you want.")
+} else if (age===100) {
+    console.log("You are wais")
+}
+//순서중요, 위부터 해보고 안되면 내려옴
+else {
+    //조건이 맞지 않음
+    console.log("Please write a nunmber.")
+} // 뭔데!!!!!!
+
+
+
+
+
+html을 적어줘야 연결됨
+
+    link rel
