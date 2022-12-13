@@ -107,7 +107,9 @@ public class b3 : MonoBehaviour
 
 
 
-        int isFullLevel 
+        int FullLevel = 99;
+        isFullLevel = level ==FullLevel;
+        Debug.Log("용사는 만렙입니까?" + isFullLevel);
 
 
 
